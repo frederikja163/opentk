@@ -17,9 +17,9 @@ namespace GeneratorV2.Writing
         {
             _spec = spec;
             _path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? throw new NullReferenceException(),
-                "..", "..", "..", "..", "OpenToolkit.Graphics");
+                "..", "..", "..", "..", "OpenTK.Graphics");
 
-            const string namespaceName = "OpenToolkit.Graphics";
+            const string namespaceName = "OpenTK.Graphics";
             foreach (var (name, api) in _spec.Apis)
             {
                 AddNode(new ApiNode(_path, namespaceName, api));
@@ -34,7 +34,7 @@ namespace GeneratorV2.Writing
                     .AddNode(new ClassNode("GLLoader"))
                         .AddNode(new LoaderNode());
 
-            AddNode(new FileNode(Path.Combine(_path, "OpenToolkit.Graphics.csproj")))
+            AddNode(new FileNode(Path.Combine(_path, "OpenTK.Graphics.csproj")))
                 .AddNode(new ProjectNode(namespaceName));
 
         }

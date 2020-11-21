@@ -17,9 +17,9 @@ namespace GeneratorV2.Writing
         {
             Writer.WriteLine("using System;");
             Writer.WriteLine("using System.Runtime.InteropServices;");
-            Writer.WriteLine("using OpenToolkit.Graphics.Types;");
-            Writer.WriteLine("using OpenToolkit.Core.Native;");
-            Writer.WriteLine("using OpenToolkit.Mathematics;");
+            Writer.WriteLine("using OpenTK.Graphics.Types;");
+            Writer.WriteLine("using OpenTK.Core.Native;");
+            Writer.WriteLine("using OpenTK.Mathematics;");
             Writer.WriteLine();
             Writer.WriteLine("namespace " + _name);
         }

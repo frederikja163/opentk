@@ -37,8 +37,8 @@ namespace GeneratorV2.Writing
 
                 using (Writer.Indentation())
                 {
-                    Writer.WriteLine("<ProjectReference Include=\"../OpenToolkit.Core/OpenToolkit.Core.csproj\" />");
-                    Writer.WriteLine("<ProjectReference Include=\"../OpenToolkit.Mathematics/OpenToolkit.Mathematics.csproj\" />");
+                    Writer.WriteLine("<ProjectReference Include=\"../OpenTK.Core/OpenTK.Core.csproj\" />");
+                    Writer.WriteLine("<ProjectReference Include=\"../OpenTK.Mathematics/OpenTK.Mathematics.csproj\" />");
                 }
 
                 Writer.WriteLine("</ItemGroup>");
